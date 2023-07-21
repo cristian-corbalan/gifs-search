@@ -21,16 +21,25 @@
   <h1 class="text-center text-xl font-bold">Buscador de GIFs</h1>
 </header>
 
-<main class="flex justify-center h-full py-8 px-4 bg-slate-100	">
-  <div class="w-3/5">
-    <label class="block text-sm font-medium leading-6 text-gray-900 mb-2"
-           for="searchInput">Buscar:</label>
-    <input id="searchInput"
-           class="block w-full mb-4 rounded-md border-0 p-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
-           type="text"
-           name="searchValue">
-    <button class="w-full bg-emerald-500 font-bold font-large py-2 px-4 rounded-md hover:bg-emerald-400 transition uppercase">Buscar</button>
+<main class="flex justify-start content-center items-center h-full py-8 px-4 bg-slate-100 flex-col">
+  <div class="w-3/5 mb-12">
+    <form action="#" id="searchForm">
+      <label class="block text-sm font-medium leading-6 text-gray-900 mb-2"
+             for="searchInput">Buscar:</label>
+      <input id="searchInput"
+             class="block w-full mb-4 rounded-md border-0 p-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+             type="text"
+             name="searchValue">
+
+      <button class="w-full bg-emerald-500 font-bold font-large py-2 px-4 rounded-md hover:bg-emerald-400 transition uppercase"
+              type="submit"
+      >Buscar</button>
+    </form>
   </div>
+
+  <div id="content"></div>
 </main>
+
+<script src="scripts/main.js"></script>
 </body>
 </html>
