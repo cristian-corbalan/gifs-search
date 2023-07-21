@@ -21,7 +21,7 @@
   <h1 class="text-center text-xl font-bold">Buscador de GIFs</h1>
 </header>
 
-<main class="flex justify-start content-center items-center h-full py-8 px-4 bg-slate-100 flex-col">
+<main class="flex justify-start content-center items-center grow py-8 px-4 bg-slate-100 flex-col">
   <div class="w-3/5 mb-12">
     <form action="#" id="searchForm">
       <label class="block text-sm font-medium leading-6 text-gray-900 mb-2"
@@ -31,13 +31,15 @@
              type="text"
              name="searchValue">
 
-      <button class="w-full bg-emerald-500 font-bold font-large py-2 px-4 rounded-md hover:bg-emerald-400 transition uppercase"
-              type="submit"
-      >Buscar</button>
+      <button
+          class="w-full bg-emerald-500 font-bold font-large py-2 px-4 rounded-md hover:bg-emerald-400 transition uppercase"
+          type="submit"
+      >Buscar
+      </button>
     </form>
   </div>
 
-  <div id="content"></div>
+  <ul class="flex flex-wrap justify-between gap-y-8" id="content"></ul>
 </main>
 
 <script src="scripts/main.js"></script>
