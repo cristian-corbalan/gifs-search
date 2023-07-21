@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es" class="h-full">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Buscador de GIFs</title>
+
+  <!-- Icons -->
+  <link rel="stylesheet" href="https://unpkg.com/boxicons@latest/css/boxicons.min.css">
+
+  <!-- Tailwind-->
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <!--Site styles-->
+  <!--  <link rel="stylesheet" href="stylesheets/main.css">-->
+</head>
+<body class="h-full flex flex-col">
+<header class="py-2 px-4 bg-slate-200	">
+  <h1 class="text-center text-xl font-bold">Buscador de GIFs</h1>
+</header>
+
+<main class="flex justify-center h-full py-8 px-4 bg-slate-100	">
+  <div class="w-3/5">
+    <label class="block text-sm font-medium leading-6 text-gray-900 mb-2"
+           for="searchInput">Buscar:</label>
+    <input id="searchInput"
+           class="block w-full mb-4 rounded-md border-0 p-1.5 text-gray-900 ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-1 focus:ring-inset focus:ring-indigo-600 sm:text-sm sm:leading-6"
+           type="text"
+           name="searchValue">
+    <button class="w-full bg-emerald-500 font-bold font-large py-2 px-4 rounded-md hover:bg-emerald-400 transition uppercase">Buscar</button>
+  </div>
+</main>
+</body>
+</html>
